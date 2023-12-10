@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alterra Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+      /* Font */
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+      @font-face {
+        font-family: "muli-light";
+        src: url("assets/font/Muli-Light.ttf");
+      }
+
+      @font-face {
+        font-family: "muli-regular";
+        src: url("assets/font/Muli.ttf");
+      }
+
+      @font-face {
+        font-family: "muli-semibold";
+        src: url("assets/font/Muli-SemiBold.ttf");
+      }
+
+      @font-face {
+        font-family: "muli-bold";
+        src: url("assets/font/Muli-Bold.ttf");
+      }
+
+      @font-face {
+        font-family: "sf-compact-display";
+        src: url("assets/font/sf-compact-display-medium.otf");
+      }
+      .nav {
+        font-family: "muli-bold";
+        font-size: 13px;
+      }
+
+      .nav .nav-item .nav-link {
+        color: #19345e;
+      }
+
+      .nav .nav-item .nav-link:hover {
+        color: #f47522 !important;
+      }
+
+      .active {
+        color: #f47522 !important;
+      }
+
+      .navbar-custom {
+        padding: 10px 125px;
+        height: 88px;
+      }
+
+      .header-section {
+        border: none;
+        border-radius: 0;
+        background-color: #f4f7fc;
+        height: 132px;
+        display: flex;
+        align-items: center;
+      }
+
+      .header-section .card-text {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: #19345e;
+        margin-left: 125px;
+      }
+
+      .card .card-header h1 {
+        font-family: "muli-bold";
+        font-size: 17px;
+        color: #19345e;
+        font-weight: bold;
+      }
+
+      .card .card-header p {
+        font-family: "muli-bold";
+        font-size: 15px;
+        color: #acacac;
+      }
+
+      .card .card-body .blockquote ul li {
+        font-family: "sf-compact-display";
+        font-size: 14px;
+        color: #19345e;
+      }
+
+      .card .card-body .blockquote p {
+        font-family: "sf-compact-display";
+        font-size: 14px;
+        color: #19345e;
+      }
+
+      .line {
+        height: 100%;
+        border-left: solid 1px #19345e;
+        margin-left: 50%;
+        position: relative;
+      }
+
+      .dot {
+        width: 16px;
+        height: 16px;
+        background-color: #19345e;
+        border-radius: 50%;
+        position: absolute;
+        left: -8px;
+      }
+
+      footer {
+        height: 140px;
+        background-color: #19345e;
+        font-family: "sf-compact-display";
+        color: white;
+      }
+
+      footer .footer-line {
+        height: 80px;
+        border-left: solid 1px white;
+      }
+
+      @media only screen and (min-width: 1300px) {
+        .navbar-custom {
+          padding: 10px 125px;
+          height: 88px;
+        }
+      }
+
+      @media only screen and (max-width: 992px) {
+        .navbar-custom {
+          padding: 10px 10px;
+        }
+
+        .navbar-slide {
+          background-color: white;
+          text-align: center;
+        }
+
+        .header-section .card-text {
+          margin-left: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 576px) {
+        footer .footer-line {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white navbar-custom">
+      <div class="container-fluid p-0">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo-ALTA.png" alt="Logo" width="133" class="d-inline-block align-text-top" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end navbar-slide" id="navbarNav">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link menu-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-link" href="experience.html">EXPERIENCE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-section">
+      <div class="card-text">EXPERIENCE</div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-2">
+          <div class="line">
+            <div class="dot" style="top: 150px"></div>
+            <div class="dot" style="top: 350px"></div>
+            <div class="dot" style="top: 550px"></div>
+          </div>
+        </div>
+        <div class="col-10 py-5">
+          <div class="card mb-5">
+            <div class="card-header bg-white">
+              <h1>FULL-STACK ENGINEER - ALTERRA ACADEMY</h1>
+              <p>May, 2019 - Present</p>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  - Write modern, performant, maintainable code for a diverse array of client and internal projects <br />
+                  - Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, Wordpress, Prismic, and Netlify
+                </p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card mb-5">
+            <div class="card-header bg-white">
+              <h1>FRONTEND ENGINEER - APPLE</h1>
+              <p>May, 2018 - May, 2019</p>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript</p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card mb-5">
+            <div class="card-header bg-white">
+              <h1>UI/UX DESIGN - SCOUT</h1>
+              <p>Januari, 2018 - April, 2018</p>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  - Developed and shipped highly interactive web applications for Apple Music using Ember.js <br />
+                  - Architected and implemented the front-end of Apple Music’s embeddable web player widget, which lets users log in and listen to full songs in the browse
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="w-100 d-flex flex-wrap justify-content-around align-items-center">
+      <div style="width: 110px"><img src="assets/logo-ALTA-v2.png" alt="logo" class="img-fluid" /></div>
+      <div>
+        <p>Social Media</p>
+        <ul class="d-flex gap-3 p-0" type="none">
+          <li>
+            <a href=""><img src="assets/ic_fb.png" alt="fb" /></a>
+          </li>
+          <li>
+            <a href=""><img src="assets/ic-twitter.png" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href=""><img src="assets/ic-instagram.png" alt="instagram" /></a>
+          </li>
+          <li>
+            <a href=""><img src="assets/ic-linkedin.png" alt="linkedin" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <div>
+        <p>Copyright © 2019 Alterra</p>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".menu-link").forEach((link) => {
+        if (link.href === window.location.href) {
+          link.classList.add("active");
+          link.setAttribute("aria-current", "page");
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
